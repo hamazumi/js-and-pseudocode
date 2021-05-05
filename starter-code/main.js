@@ -8,6 +8,17 @@
 
 */
 
+let name = "My name is Ken."
+
+let age = " I am 34."
+
+let address = " And live on 123 Street."
+
+let greeting = name + age + address
+
+console.log(greeting)
+
+
 
 /*
 	Part 2: Create another variable called greeting2. This time, use the
@@ -20,6 +31,8 @@
 
 */
 
+let greeting2 = `${name}${age}${address}`
+console.log(greeting2)
 
 /* 
 	Part 3: "Code Testing." Let's check and see if we did everything correctly and that `greeting` returns the same value as `greeting2`.
@@ -27,6 +40,8 @@
 	If the return is false, correct your bugs above until `greeting` and `greeting2` are equivalent. 
 */
 
+let problemSolved = Boolean(greeting == greeting2)
+console.log(problemSolved)
 
 /*
 	Part 4: (No coding is needed for this part).
@@ -42,3 +57,6 @@
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
 
+/*First step I would list the 20 numbers into an Array.
+Then I would write down the largest and smallest number I see from the Array.
+I would use console.log(Math.max()) and console.log(Math.min()) */
